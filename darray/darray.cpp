@@ -87,4 +87,4 @@ void Darray::resize(int newCap) {
 
     delete [] ptr;
     ptr = temp;
-}
+} 

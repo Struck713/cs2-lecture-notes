@@ -3,6 +3,12 @@
 This repo is a collection of all of the code I have copied down during [J. Maletic](http://www.cs.kent.edu/~jmaletic/ "J. Maletic's website")'s lectures at [KSU](https://www.kent.edu/cs "Kent State University").
 All of the code is written in C++. There also could possibly be a *Makefile* or two added at some point. **I have no clue.**
 
+## Projects
+- darray: A dynamically allocated array
+- darray_generic: A generic dynamically allocated array
+- set: A set collection
+- string: A basic string (not dynamic)
+
 ## Compiling
 To build any of the projects in here, we use [clang++](https://clang.llvm.org/ "clang++ website"). Clone the repo and run this command:
 ```terminal
