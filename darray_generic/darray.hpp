@@ -16,7 +16,7 @@ template <typename T>
 class Darray {
 public:
     Darray() : ptr(0), cap(0) {};
-    Darray(T);
+    Darray(int);
     Darray(const Darray<T>&);
     ~Darray() { delete [] ptr; };
 
