@@ -4,6 +4,7 @@ This repo is a collection of all of the code I have copied down during [J. Malet
 All of the code is written in C++. There also could possibly be a *Makefile* or two added at some point. **I have no clue.**
 
 ## Projects
+- stack: A basic stack ADT
 - darray: A dynamically allocated array
 - darray_generic: A generic dynamically allocated array
 - set: A set collection
