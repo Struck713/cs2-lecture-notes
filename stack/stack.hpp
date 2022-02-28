@@ -22,3 +22,4 @@ private:
     int tos;
     T s[SIZE];
 };
+#endif
