@@ -5,11 +5,12 @@ All of the code is written in C++. There also could possibly be a *Makefile* or 
 
 ## Projects
 - stack: A basic stack ADT
-- recursion: Examples of recursive solutions to factorials, the fibbonachi sequence and the Towers of Hanoi 
+- set: A basic set ADT
+- string: A basic string ADT (not dynamic)
 - darray: A dynamically allocated array
 - darray_generic: A generic dynamically allocated array
-- set: A set collection
-- string: A basic string (not dynamic)
+- queue: A basic queue ADT implemented as a circular array
+- recursion: Examples of recursive solutions to factorials, the fibbonachi sequence and the Towers of Hanoi 
 
 ## Compiling
 To build any of the projects in here, we use [clang++](https://clang.llvm.org/ "clang++ website"). Clone the repo and run this command:
