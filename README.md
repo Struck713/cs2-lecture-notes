@@ -5,6 +5,7 @@ All of the code is written in C++. There also could possibly be a *Makefile* or 
 
 ## Projects
 - stack: A basic stack ADT
+- recursion: Examples of recursive solutions to factorials, the fibbonachi sequence and the Towers of Hanoi 
 - darray: A dynamically allocated array
 - darray_generic: A generic dynamically allocated array
 - set: A set collection
