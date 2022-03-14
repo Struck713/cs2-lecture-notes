@@ -74,8 +74,29 @@ stack<T>::stack(const stack<T>& actual) {
             bottom = tos;
             continue;
         }
+        
     }
 }
 
+template <typename T>
+void stack<T>::swap(stack<T>& rhs) {
+    node<T> *temp = rhs.tos;
+    rhs.tos = tos;
+    tos = temp;
+}
+
+template <typename T>
+stack<T>& stack<T>::operator=(stack<T>& rhs) {
+    swap(rhs);
+    return *this;
+}
+
+template <typename T>
+bool stack<T>::isFull() const {
+    node<T> *temp = new(std::nothrow) node<T>();
+    if (temp == 0) return true; //?No more memory |||||| Deallocate what you allocated
+    delete temp;
+    return false;
+}
 
 #endif
