@@ -1,5 +1,5 @@
-#ifndef CS2_LINKED_LIST_HPP_
-#define CS2_LINKED_LIST_HPP_
+#ifndef CS2_STACK_LINKED_HPP_
+#define CS2_STACK_LINKED_HPP_
 
 template <typename T>
 class node {

@@ -2,6 +2,14 @@
 #define CS2_QUEUE_LINKED_
 #include <cassert>
 
+template <typename T>
+class node {
+public:
+    node() : next(0) {};
+    node(const T& x) : data(x), next(0) {};
+    T data;
+    node<T>* next;
+};
 
 // CLASS INV: beggining -> x1 -> ... -> xN <- ending
 template <typename T>

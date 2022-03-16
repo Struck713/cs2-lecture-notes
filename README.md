@@ -12,6 +12,8 @@ All of the code is written in C++. There also could possibly be a *Makefile* or 
 - queue: A basic queue ADT implemented as a circular array
 - linkedlist - A linked list ADT that trades off some memory for some computation time
     - stack - A linked list stack
+    - queue - A linked list circular queue
+    - dlist - A dually linked list
 - recursion: Examples of recursive solutions to factorials, the fibbonachi sequence and the Towers of Hanoi 
 
 ## Compiling
