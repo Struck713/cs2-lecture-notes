@@ -14,6 +14,8 @@ All of the code is written in C++. There also could possibly be a *Makefile* or 
     - stack - A linked list stack
     - queue - A linked list circular queue
     - dlist - A dually linked list
+- tree
+    - binary search tree - A tree where each node has 2 children
 - recursion: Examples of recursive solutions to factorials, the fibbonachi sequence and the Towers of Hanoi 
 
 ## Compiling
