@@ -61,6 +61,8 @@ bool btree<T>::find(const T& key) const {
 
 template <typename T>
 void btree<T>::postorder(std::ostream& out) const {
+    if (empty) return;
+    
     if (left) left->postorder(out);
     if (right) right->postorder(out);
     out << data << ' '; // visit
@@ -68,6 +70,8 @@ void btree<T>::postorder(std::ostream& out) const {
 
 template <typename T>
 void btree<T>::inorder(std::ostream& out) const {
+    if (empty) return;
+
     if (left) left->postorder(out);
     out << data << ' '; //visit
     if (right) right->postorder(out);
@@ -75,9 +79,52 @@ void btree<T>::inorder(std::ostream& out) const {
 
 template <typename T>
 void btree<T>::preorder(std::ostream& out) const {
+    if (empty) return;
+
     out << data << ' '; // visit
     if (left) left->postorder(out);
     if (right) right->postorder(out);
+}
+
+
+template<typename T>
+btree<T>::~btree() {
+    if (left)  delete left;  //! recursive because delete calls destructor of object class
+    if (right) delete right;
+
+    //* Compiler deallocates object memory (left, right, empty, data) 
+
+}
+
+template<typename T>
+btree<T>::btree(const btree<T>& actual): btree<T>() {
+    if (actual.empty) return;
+
+    data  = actual.data;
+    empty = actual.empty;
+
+    if (actual.left) left   = new btree<T>(*(actual.left));
+    if (actual.right) right = new btree<T>(*(actual.right));
+    
+}
+
+template<typename T>
+void  btree<T>::swap(btree<T>& rhs) {
+    btree<T>* leftTemp = left;
+    left = rhs.left;
+    rhs.left = leftTemp;
+
+    btree<T>* rightTemp = right;
+    right = rhs.right;
+    rhs.right = rightTemp;
+
+    bool tempEmpty = empty;
+    empty = rhs.empty;
+    rhs.empty = tempEmpty;
+
+    T tempData = data;
+    data = rhs.data;
+    rhs.data = tempData;
 }
 
 #endif
