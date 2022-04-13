@@ -16,7 +16,8 @@ All of the code is written in C++. There also could possibly be a *Makefile* or 
     - dlist - A dually linked list
 - tree
     - binary search tree - A tree where each node has 2 children
-- recursion: Examples of recursive solutions to factorials, the fibbonachi sequence and the Towers of Hanoi 
+- recursion: Examples of recursive solutions to factorials, the fibbonachi sequence and the Towers of Hanoi
+- map: A backtracking algorithm to solve the 4 Color Theorem 
 
 ## Compiling
 To build any of the projects in here, we use [clang++](https://clang.llvm.org/ "clang++ website"). Clone the repo and run this command:
