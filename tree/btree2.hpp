@@ -165,4 +165,11 @@ bnode<T>* bnode<T>::bremove(const T& x) {
     return this;
 }
 
+template <typename T>
+void btree<T>::swap(btree<T>& rhs) {
+    bnode<T>* temp = root;
+    root = rhs.root;
+    rhs.root = temp;
+}
+
 #endif
