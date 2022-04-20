@@ -10,14 +10,15 @@ All of the code is written in C++. There also could possibly be a *Makefile* or 
 - darray: A dynamically allocated array
 - darray_generic: A generic dynamically allocated array
 - queue: A basic queue ADT implemented as a circular array
-- linkedlist - A linked list ADT that trades off some memory for some computation time
-    - stack - A linked list stack
-    - queue - A linked list circular queue
-    - dlist - A dually linked list
+- linkedlist: A linked list ADT that trades off some memory for some computation time
+    - stack: A linked list stack
+    - queue: A linked list circular queue
+    - dlist: A dually linked list
 - tree
-    - binary search tree - A tree where each node has 2 children
+    - binary search tree: A tree where each node has 2 children
 - recursion: Examples of recursive solutions to factorials, the fibbonachi sequence and the Towers of Hanoi
-- map: A backtracking algorithm to solve the 4 Color Theorem 
+- map: A backtracking algorithm to solve the 4 Color Theorem
+- inheritance: An example of inheritance using virtual methods
 
 ## Compiling
 To build any of the projects in here, we use [clang++](https://clang.llvm.org/ "clang++ website"). Clone the repo and run this command:
