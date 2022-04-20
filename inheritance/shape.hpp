@@ -4,11 +4,14 @@
 
 #include <iostream>
 
-class shape {
+class shape { // abstract class
 public:
     shape() : x(0), y(0) {};
+    virtual ~shape() {}
     void move(int nx, int ny) { x = nx; y = ny; };
-    virtual void draw() { std::cout << "Shape at " << x << ", " << y << std::endl; };
+    virtual void draw() = 0; // pure virtual method
+
+
 protected:
     int x, y;
 };
