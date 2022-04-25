@@ -19,6 +19,8 @@ All of the code is written in C++. There also could possibly be a *Makefile* or 
 - recursion: Examples of recursive solutions to factorials, the fibbonachi sequence and the Towers of Hanoi
 - map: A backtracking algorithm to solve the 4 Color Theorem
 - inheritance: An example of inheritance using virtual methods
+    - shape: Basic shape class that is inherited by a triangle, circle and rectangle class.
+    - format: A word processor that has different formatting options that inherit from a formal class.
 
 ## Compiling
 To build any of the projects in here, we use [clang++](https://clang.llvm.org/ "clang++ website"). Clone the repo and run this command:
